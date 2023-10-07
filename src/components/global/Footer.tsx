@@ -9,7 +9,7 @@ export default function Footer() {
             Based in Maseru, Lesotho, but working on projects anywhere!
           </h4>
           <Link
-            className="w-fit hover:bg-firstColor bg-slate-700 text-whiteColor font-semibold px-4 py-2 rounded-lg"
+            className="w-fit hover:bg-firstColor bg-slate-500 dark:bg-slate-700 text-whiteColor font-semibold px-4 py-2 rounded-lg"
             href="/contact">
             Get in Touch
           </Link>
