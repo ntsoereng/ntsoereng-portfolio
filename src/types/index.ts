@@ -16,3 +16,10 @@ export type ProfileType = {
   socialLinks: string[];
   skills: string[];
 };
+
+export type PageType = {
+  _id: string;
+  title: string;
+  slug: string;
+  //content: PortableTextBlock[];
+};

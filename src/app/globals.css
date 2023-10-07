@@ -12,3 +12,21 @@
     @apply text-slate-900 dark:text-white;
   }
 }
+
+:root {
+  --header-height: 3rem;
+
+  /*===== Fuente y tipografia =====*/
+  --normal-font-size: 0.938rem;
+  --small-font-size: 0.813rem;
+
+  /*===== z index =====*/
+  --z-fixed: 100;
+}
+
+@media screen and (min-width: 768px) {
+  :root {
+    --normal-font-size: 1rem;
+    --small-font-size: 0.875rem;
+  }
+}
