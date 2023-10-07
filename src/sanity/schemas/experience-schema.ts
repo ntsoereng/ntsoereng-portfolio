@@ -1,10 +1,10 @@
-// import {BiBriefcase} from "react-icons/bi"
+import { BiBriefcase } from 'react-icons/bi';
 
 const experience = {
   name: 'experience',
   title: 'Experience',
   type: 'document',
-  // icon: BiBriefcase,
+  icon: BiBriefcase,
   fields: [
     {
       name: 'companyName',
