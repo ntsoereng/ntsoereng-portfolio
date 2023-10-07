@@ -34,3 +34,14 @@ export type ExperienceType = {
   startDate: Date;
   endDate: Date;
 };
+
+export type ProjectType = {
+  _id: string;
+  name: string;
+  tagline: string;
+  slug: string;
+  projectLogo: string;
+  projectUrl: string;
+  coverImage: { alt: string | null; image: string };
+  description: PortableTextBlock[];
+};

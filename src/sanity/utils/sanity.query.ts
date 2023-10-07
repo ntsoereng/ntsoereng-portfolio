@@ -1,6 +1,6 @@
 import { groq } from 'next-sanity';
 import client from '../config/sanity.client';
-import { ExperienceType, PageType, ProfileType } from '@/types';
+import { ExperienceType, PageType, ProfileType, ProjectType } from '@/types';
 
 export async function getProfile(): Promise<ProfileType[]> {
   return client.fetch(
@@ -42,6 +42,18 @@ export async function getExperience(): Promise<ExperienceType[]> {
       description,
       startDate,
       endDate
+    }`
+  );
+}
+
+export async function getProjects(): Promise<ProjectType> {
+  return client.fetch(
+    groq`*[_type == "project"]{
+      _id,
+      name,
+      "slug": slug.current,
+      tagline,
+      "logo": logo.asset->url
     }`
   );
 }

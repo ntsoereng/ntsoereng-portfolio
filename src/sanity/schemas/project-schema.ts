@@ -1,4 +1,4 @@
-// import {BiPackage} from "react-icons/bi"
+import { BiPackage } from 'react-icons/bi';
 import { defineField } from 'sanity';
 
 const project = {
@@ -6,7 +6,7 @@ const project = {
   title: 'Project',
   type: 'document',
   description: 'Project Schema',
-  // icon: BiPackage,
+  icon: BiPackage,
   fields: [
     {
       name: 'name',
