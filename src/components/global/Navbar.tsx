@@ -3,27 +3,21 @@ import Image from 'next/image';
 import Link from 'next/link';
 import { usePathname } from 'next/navigation';
 import { useState } from 'react';
-import { getPages } from '@/sanity/utils/sanity.query';
+// import { getPages } from '@/sanity/utils/sanity.query';
+import { navLinks } from '@/lib/navlinks';
 
-export default async function Navbar() {
+export default function Navbar() {
   const [isNavOpen, setisNavOpen] = useState(false);
-
-  const pages = await getPages();
-
   const pathname = usePathname();
+
+  // const pages = await getPages();
 
   const toggleNav = () => {
     setisNavOpen(!isNavOpen);
   };
 
   return (
-    <header className="header h-[calc(var(--header-height)+1rem)] w-full fixed top-0 left-0 py-0 px-6 lg:py-2 z-fixed flex justify-between items-center">
-      {/* <Link
-        href="/"
-        className="dark:text-whiteColor text-slate-800 font-semibold tracking-wider lg:hidden">
-        Cletus Ntsoereng
-      </Link> */}
-
+    <header className="header h-[calc(var(--header-height)+1rem)] w-full fixed top-0 left-0 py-0 px-6 lg:py-2 z-fixed flex justify-between items-center dark:bg-darkColor/70 bg-white/80 backdrop-blur-sm">
       <div className="flex items-center lg:hidden">
         <div className="w-8 h-8 mr-2 mb-0 items-center flex justify-center pt-1 bg-firstColor rounded-[50%] overflow-hidden">
           <Image
@@ -61,7 +55,7 @@ export default async function Navbar() {
       <nav
         className={`nav transition-all lg:w-full max-lg:fixed max-lg:top-0 max-lg:py-2 lg:py-2 ${
           isNavOpen ? 'max-lg:left-0' : 'max-lg:-left-full'
-        } max-lg:text-whiteColor max-lg:w-full max-lg:h-screen max-lg:py-6 max-lg:px-0 max-lg:z-fixed max-lg:transition-all`}
+        } max-lg:dark:bg-darkColor max-lg:bg-white max-lg:text-whiteColor max-lg:w-full max-lg:h-screen max-lg:py-6 max-lg:px-0 max-lg:z-fixed max-lg:transition-all`}
         id="nav-menu">
         <div className="transition-all lg:mx-auto lg:grid-cols-[repeat(3,max-content)] lg:grid-rows-[1fr] lg:gap-x-4 lg:justify-between lg:items-center h-full grid-rows-[max-content_max-content_max-content] gap-y-16 max-w-5xl grid grid-cols-[100%] mx-6">
           {/* Close Nav Menu */}
@@ -105,22 +99,22 @@ export default async function Navbar() {
 
           <div className="text-slate-700">
             <ul className="lg:flex">
-              {pages.map(page => {
-                const isActive = pathname === page.slug;
+              {navLinks.map(navLink => {
+                const isActive = pathname === navLink.slug;
 
                 return (
                   <li
                     className="lg:my-0 lg:mx-1 my-6 mx-0 font-semibold"
-                    key={page.slug}>
+                    key={navLink.slug}>
                     <Link
-                      href={page.slug}
+                      href={navLink.slug}
                       onClick={toggleNav}
                       className={
                         isActive
                           ? 'lg:py-3 lg:px-4 px-4 py-3 bg-firstColor text-white rounded'
                           : 'lg:py-3 lg:px-4 px-4 py-3 hover:bg-firstColor hover:text-white text-slate-600 dark:text-whiteColor rounded'
                       }>
-                      {page.title}
+                      {navLink.title}
                     </Link>
                   </li>
                 );

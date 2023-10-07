@@ -5,8 +5,8 @@ export default async function Home() {
   const profile = await getProfile();
 
   return (
-    <main className="max-w-7xl mx-auto lg:px-16 px-6">
-      <section className="flex xl:flex-row flex-col xl:items-center items-start xl:justify-center justify-between gap-x-12 lg:mt-32 mt-20 mb-16">
+    <main className="max-w-6xl mx-auto lg:px-16 px-6">
+      <section className="flex xl:flex-row flex-col xl:items-center items-start xl:justify-center justify-between gap-x-12 lg:mt-44 mt-32 mb-16">
         {profile &&
           profile.map(data => (
             <div key={data._id} className="lg:max-w-2xl max-w-2xl">
@@ -14,7 +14,7 @@ export default async function Home() {
                 {data.headline}
               </h1>
               <p className="text-base leading-relaxed">{data.shortBio}</p>
-              <ul className="flex items-center gap-x-6 my-10">
+              <ul className="flex items-center gap-x-4 my-10">
                 {Object.entries(data.socialLinks)
                   .sort()
                   .map(([key, value], id) => (
@@ -22,7 +22,7 @@ export default async function Home() {
                       <a
                         href={value}
                         rel="noreferer noopener"
-                        className="flex items-center gap-x-3 mb-5 hover:text-indigo-600 duration-300">
+                        className="font-semibold flex items-center gap-x-3 rounded mb-5 px-2 py-1 hover:bg-firstColor hover:text-white duration-300">
                         {key[0].toLocaleUpperCase() +
                           key.toLocaleLowerCase().slice(1)}
                       </a>

@@ -2,14 +2,14 @@ import Link from 'next/link';
 
 export default function Footer() {
   return (
-    <footer className="pt-20 mt-10 max-w-5xl mx-auto">
+    <footer className="pt-20 mt-10 max-w-6xl lg:px-16 px-6 mx-auto">
       <div className="grid md:place-content-center grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-12 mb-16">
         <div className="flex flex-col gap-4">
           <h4 className="font-xl font-semibold text-slate-800 dark:text-whiteColor mb-2">
             Based in Maseru, Lesotho, but working on projects anywhere!
           </h4>
           <Link
-            className="w-fit bg-firstColor hover:bg-slate-700 text-whiteColor font-semibold px-4 py-2 rounded-lg"
+            className="w-fit hover:bg-firstColor bg-slate-700 text-whiteColor font-semibold px-4 py-2 rounded-lg"
             href="/contact">
             Get in Touch
           </Link>
@@ -100,7 +100,7 @@ export default function Footer() {
           </ul>
         </div>
       </div>
-      <p className="text-slate-400 dark:text-slate-500 text-center text-sm">
+      <p className="text-slate-400 dark:text-slate-500 text-center text-sm py-4">
         Copyright &copy; {new Date().getFullYear()} | Cletus Ntsoereng
       </p>
     </footer>
