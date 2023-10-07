@@ -21,5 +21,16 @@ export type PageType = {
   _id: string;
   title: string;
   slug: string;
-  //content: PortableTextBlock[];
+  content: PortableTextBlock[];
+};
+
+export type ExperienceType = {
+  _id: string;
+  companyName: string;
+  jobTitle: string;
+  logo: string;
+  url: string;
+  description: string;
+  startDate: Date;
+  endDate: Date;
 };
