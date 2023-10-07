@@ -1,1 +1,3 @@
-export const schemaTypes = []
+import profile from './profile-schema';
+
+export const schemaTypes = [profile];
