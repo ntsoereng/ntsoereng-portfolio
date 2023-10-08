@@ -49,11 +49,11 @@ export async function getExperience(): Promise<ExperienceType[]> {
 export async function getProjects(): Promise<ProjectType[]> {
   return client.fetch(
     groq`*[_type == "project"]{
-      _id,
+      _id, 
       name,
       "slug": slug.current,
       tagline,
-      "logo": logo.asset->url
+      "projectLogo": projectLogo.asset->url,
     }`
   );
 }

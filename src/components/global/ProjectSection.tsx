@@ -23,13 +23,13 @@ export default async function ProjectSection() {
           <Link
             href={`/projects/${project.slug}`}
             key={project._id}
-            className="flex items-center gap-x-4 dark:bg-[#1d1d20] bg-slate-200 border border-transparent dark:hover:border-slate-700 hover:border-slate-300 p-4 rounded-lg ease-in-out">
+            className="shadow flex items-center gap-x-4 dark:bg-[#1d1d20] bg-slate-100 border border-transparent dark:hover:border-slate-700 hover:border-slate-400 p-4 rounded-lg ease-in-out duration-300">
             <Image
               src={project.projectLogo}
               width={60}
               height={60}
               alt={project.name}
-              className="dark:bg-slate-800 bg-slate-200 rounded-md p-2"
+              className="dark:bg-slate-800 bg-slate-200 rounded-md"
             />
             <div>
               <h2 className="font-semibold mb-1">{project.name}</h2>

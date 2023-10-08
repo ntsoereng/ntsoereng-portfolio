@@ -1,10 +1,13 @@
 import Experience from '@/components/global/Experience';
 import HeroSvg from '@/components/global/HeroSvg';
 import ProjectSection from '@/components/global/ProjectSection';
-import { getProfile } from '@/sanity/utils/sanity.query';
+import { getProfile, getProjects } from '@/sanity/utils/sanity.query';
+import Image from 'next/image';
+import Link from 'next/link';
 
 export default async function Home() {
   const profile = await getProfile();
+  const projects = await getProjects();
 
   return (
     <main>
@@ -38,6 +41,7 @@ export default async function Home() {
         </section>
       </section>
       <Experience />
+      <ProjectSection />
     </main>
   );
 }
