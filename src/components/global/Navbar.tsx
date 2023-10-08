@@ -17,7 +17,7 @@ export default function Navbar() {
   };
 
   return (
-    <header className="header h-[calc(var(--header-height)+1rem)] w-full fixed top-0 left-0 py-0 px-6 lg:py-2 z-fixed flex justify-between items-center dark:bg-darkColor/70 bg-white/80 backdrop-blur-sm">
+    <header className="header shadow-lg h-[calc(var(--header-height)+1rem)] w-full fixed top-0 left-0 py-0 px-6 lg:py-2 z-fixed flex justify-between items-center dark:bg-darkColor/70 bg-white/80 backdrop-blur-sm">
       <div className="flex items-center lg:hidden">
         <div className="w-8 h-8 mr-2 mb-0 items-center flex justify-center pt-1 bg-firstColor rounded-[50%] overflow-hidden">
           <Image
