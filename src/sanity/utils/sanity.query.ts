@@ -46,7 +46,7 @@ export async function getExperience(): Promise<ExperienceType[]> {
   );
 }
 
-export async function getProjects(): Promise<ProjectType> {
+export async function getProjects(): Promise<ProjectType[]> {
   return client.fetch(
     groq`*[_type == "project"]{
       _id,
