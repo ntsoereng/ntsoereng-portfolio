@@ -61,7 +61,7 @@ export default async function Project({ params }: Props) {
         <div className="mt-20 flex items-center justify-start">
           <Link
             href="/projects"
-            className="text-sm font-semibold rounded-md px-4 py-2 hover:bg-firstColor dark:hover:bg-firstColor duration-300 bg-slate-500 dark:bg-slate-600 text-slate-100">
+            className="text-sm font-semibold rounded-md px-4 py-2 hover:bg-firstColor dark:hover:bg-firstColor duration-300 bg-slate-500 dark:bg-slate-800 text-slate-100">
             &larr; &nbsp; Back to all projects
           </Link>
         </div>
