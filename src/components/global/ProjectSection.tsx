@@ -7,7 +7,7 @@ export default async function ProjectSection() {
 
   return (
     <section className="max-w-6xl mx-auto lg:px-16 px-6 lg:mt-40 mt-32">
-      <section className="max-w-3xl mb-16">
+      <section className="max-w-3xl mb-12">
         <h1 className="text-3xl font-bold tracking-tight sm:text-5xl mb-6 lg:leading-[3.7rem] leading-tight">
           Featured projects I&apos;ve built over the years
         </h1>
