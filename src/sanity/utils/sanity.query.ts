@@ -57,3 +57,17 @@ export async function getProjects(): Promise<ProjectType[]> {
     }`
   );
 }
+
+export async function getSingleProject(slug: string): Promise<ProjectType> {
+  return client.fetch(
+    groq`*[_type == "project" && slug.current == $slug][0]{
+      _id,
+      name,
+      projectUrl,
+      coverImage {alt, "image":asset->url},
+      tagline,
+      description
+    }`,
+    { slug }
+  );
+}
