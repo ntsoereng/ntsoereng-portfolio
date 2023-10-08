@@ -33,9 +33,9 @@ export async function getPages(): Promise<PageType[]> {
 
 export async function getExperience(): Promise<ExperienceType[]> {
   return client.fetch(
-    groq`*[_type == "job"]{
+    groq`*[_type == "experience"]{
       _id,
-      name,
+      companyName,
       jobTitle,
       "logo": logo.asset->url,
       url,

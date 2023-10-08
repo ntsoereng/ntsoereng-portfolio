@@ -1,3 +1,4 @@
+import Experience from '@/components/global/Experience';
 import HeroSvg from '@/components/global/HeroSvg';
 import ProjectSection from '@/components/global/ProjectSection';
 import { getProfile } from '@/sanity/utils/sanity.query';
@@ -36,7 +37,7 @@ export default async function Home() {
           <HeroSvg />
         </section>
       </section>
-      <ProjectSection />
+      <Experience />
     </main>
   );
 }
