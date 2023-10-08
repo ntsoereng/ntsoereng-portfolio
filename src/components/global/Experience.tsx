@@ -16,7 +16,7 @@ export default async function Experience() {
         {experience.map(data => (
           <div
             key={data._id}
-            className="flex items-start lg:gap-x-6 gap-x-4 max-w-2xl relative before:absolute before:bottom-0 before:top-[4.5rem] before:left-7 before:w-[1px] before:h-[calc(100%-50px)] dark:before:bg-slate-800 before:bg-slate-400">
+            className="flex items-start lg:gap-x-6 gap-x-4 max-w-2xl relative before:absolute before:bottom-0 before:top-[4.5rem] before:left-7 before:w-[1px] before:h-[calc(100%-50px)] dark:before:bg-slate-800 before:bg-slate-300">
             <a
               href={data.url}
               title={data.companyName}
