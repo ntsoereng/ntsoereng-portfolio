@@ -52,7 +52,7 @@ export default async function Project({ params }: Props) {
           width={900}
           height={320}
           alt={project.coverImage?.alt || project.name}
-          className="rounded-xl border border-slate-300 dark:border-slate-400"
+          className="rounded-xl border border-slate-300 dark:border-slate-700"
         />
 
         <div className="flex flex-col gap-y-6 mt-8 leading-7">
