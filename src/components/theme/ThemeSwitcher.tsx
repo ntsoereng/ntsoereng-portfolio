@@ -18,7 +18,7 @@ export const ThemeSwitcher = () => {
   return (
     <div
       onClick={() => setTheme(theme === 'dark' ? 'light' : 'dark')}
-      className="z-[9999] flex gap-1 fixed bottom-4 left-4 cursor-pointer p-1 shadow-xl rounded-full dark:bg-slate-700 bg-slate-600">
+      className="z-[9999] flex gap-1 fixed bottom-4 right-4 cursor-pointer p-1 shadow-xl rounded-full dark:bg-slate-700 bg-slate-600">
       <span
         className={`p-1 rounded-[50%] ${
           theme === 'light' ? 'bg-white' : 'bg-none'
