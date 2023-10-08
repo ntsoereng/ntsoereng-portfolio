@@ -7,7 +7,7 @@ export default async function Experience() {
   return (
     <section className="mt-32">
       <div className="mb-16">
-        <h2 className="font-semibold text-4xl mb-4">Work Experience</h2>
+        <h2 className="font-semibold text-3xl mb-4">Work Experience</h2>
       </div>
 
       <div className="flex flex-col gap-y-12">
