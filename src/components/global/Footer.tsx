@@ -1,21 +1,18 @@
-import Link from 'next/link';
+import { BiEnvelope, BiMapPin, BiPhone } from 'react-icons/bi';
+import ContactForm from './ContactForm';
 
 export default function Footer() {
   return (
     <footer className="pt-20 mt-10 max-w-6xl lg:px-16 px-6 mx-auto">
       <div className="border-t dark:border-slate-500 border-slate-300 pt-10 grid md:place-content-center grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-12 mb-16">
-        <div className="flex flex-col gap-4">
-          <h4 className="font-xl font-semibold text-slate-800 dark:text-whiteColor mb-2">
+        <div className="flex flex-col gap-2">
+          <h4 className="text-xl font-bold tracking-wider mb-2">
             Based in Maseru, Lesotho, but working on projects anywhere!
           </h4>
-          <Link
-            className="w-fit hover:bg-firstColor dark:hover:bg-firstColor bg-slate-500 dark:bg-slate-700 text-whiteColor font-semibold px-4 py-2 rounded-lg"
-            href="/contact">
-            Get in Touch
-          </Link>
+          <ContactForm />
         </div>
-        <div>
-          <h4 className="font-xl font-semibold text-slate-800 dark:text-whiteColor mb-4">
+        <div className="mb-4">
+          <h4 className="text-xl font-bold tracking-wider text-slate-800 dark:text-whiteColor mb-4">
             Let&apos;s Connect Socially
           </h4>
           <div className="flex gap-4">
@@ -71,18 +68,35 @@ export default function Footer() {
           </div>
         </div>
         <div>
-          <h4 className="font-xl font-semibold text-slate-800 dark:text-whiteColor mb-4">
-            My Services
-          </h4>
-          <ul className="text-slate-500 dark:text-slate-400">
-            <li className="mb-2">Web Development</li>
-            <li className="mb-2">Content Management Systems</li>
-            <li className="mb-2">Search Engine Optimisation</li>
-            <li className="mb-2">Integration</li>
-          </ul>
+          <div className="mb-4">
+            <h4 className="text-xl font-bold tracking-wider text-slate-800 dark:text-whiteColor mb-4">
+              My Contact Info
+            </h4>
+            <div className="flex gap-4 items-center text-lg mb-4">
+              <span className="text-2xl">
+                <span className="sr-only">My Location:</span>
+                <BiMapPin />
+              </span>
+              <span>Maseru, Lesotho</span>
+            </div>
+            <div className="flex gap-4 items-center text-lg mb-4">
+              <span className="text-2xl">
+                <span className="sr-only">My Email</span>
+                <BiEnvelope />
+              </span>
+              <span>cn.ntsoereng@gmail.com</span>
+            </div>
+            <div className="flex gap-4 items-center text-lg mb-4">
+              <span className="text-2xl">
+                <span className="sr-only">My Telephone</span>
+                <BiPhone />
+              </span>
+              <span>(266) 5754 0890, 6200 1918</span>
+            </div>
+          </div>
         </div>
       </div>
-      <p className="text-slate-400 font-semibold dark:text-slate-500 text-center text-sm py-4">
+      <p className="tracking-widest text-slate-400 font-semibold dark:text-slate-500 text-center text-sm py-4">
         Copyright &copy; {new Date().getFullYear()} | Cletus Ntsoereng
       </p>
     </footer>

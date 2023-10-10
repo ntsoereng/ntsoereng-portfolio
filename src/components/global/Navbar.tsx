@@ -86,7 +86,7 @@ export default function Navbar() {
             <div className="self-center">
               <Link
                 href="/"
-                className="block text-slate-900 dark:text-whiteColor font-semibold text-base tracking-wider">
+                className="block text-slate-900 dark:text-white font-semibold text-base tracking-wider">
                 Cletus Ntsoereng
               </Link>
               <span className="text-sm text-slate-500 dark:text-slate-400 lg:hidden">
