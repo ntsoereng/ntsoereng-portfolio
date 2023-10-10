@@ -13,6 +13,8 @@ export const metadata: Metadata = {
   description: 'I am a fullstack web developer based in Maseru, Lesotho.',
 };
 
+export const revalidate = 3600;
+
 export default function RootLayout({
   children,
 }: {
