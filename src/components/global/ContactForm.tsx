@@ -8,7 +8,7 @@ export default function ContactForm() {
 
   if (state.succeeded) {
     return (
-      <section className="rounded-lg p-8 dark:bg-gray-900 bg-slate-100 border dark:border-slate-500 border-slate-300">
+      <section className="rounded-lg p-8 dark:bg-[#1d1d20] bg-slate-100 border dark:border-slate-500 border-slate-300">
         <p className="text-base tracking-wider">
           Thanks for your message. I&apos;ll get back to you real soon!
         </p>
