@@ -41,7 +41,7 @@ export default async function Home() {
         </section>
       </section>
       <Experience />
-      <ProjectSection />
+      {/* <ProjectSection /> */}
     </main>
   );
 }

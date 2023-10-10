@@ -35,7 +35,8 @@ export default async function Experience() {
                 {data.jobTitle}
               </p>
               <small className="text-sm text-slate-400 dark:text-slate-600 mt-2 tracking-widest uppercase">
-                {data.startDate.toString()} &mdash; {data.endDate.toString()}
+                {data.startDate.toString()} &mdash;{' '}
+                {data.endDate ? data.endDate.toString() : 'PRESENT'}
               </small>
               <p className="text-base my-4">{data.description}</p>
             </div>
