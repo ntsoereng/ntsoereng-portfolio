@@ -8,7 +8,7 @@ export default async function Experience() {
     <section className="mt-32 max-w-6xl mx-auto lg:px-16 px-6">
       <div className="mb-16">
         <h2 className="font-semibold text-3xl sm:text-5xl mb-2">
-          My Professional Journey
+          My Professional Engagements
         </h2>
       </div>
 
