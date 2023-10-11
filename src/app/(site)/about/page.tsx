@@ -3,6 +3,8 @@ import { getProfile } from '@/sanity/utils/sanity.query';
 import { BiEnvelope } from 'react-icons/bi';
 import Image from 'next/image';
 
+export const revalidate = 3600;
+
 export default async function About() {
   const profile = await getProfile();
 
