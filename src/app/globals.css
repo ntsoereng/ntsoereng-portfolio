@@ -9,7 +9,7 @@
   h4,
   h5,
   h6 {
-    @apply text-slate-900 dark:text-white;
+    @apply text-slate-900 dark:text-white font-bold;
   }
 }
 
