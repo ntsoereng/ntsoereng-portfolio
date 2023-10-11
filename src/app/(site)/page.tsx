@@ -5,6 +5,8 @@ import { getProfile, getProjects } from '@/sanity/utils/sanity.query';
 import Image from 'next/image';
 import Link from 'next/link';
 
+export const revalidate = 3600;
+
 export default async function Home() {
   const profile = await getProfile();
   const projects = await getProjects();
