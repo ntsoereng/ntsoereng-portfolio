@@ -9,7 +9,7 @@ import Footer from '@/components/global/Footer';
 const inter = Inter({ subsets: ['latin'] });
 
 export const metadata: Metadata = {
-  title: 'Cletus Ntsoereng - Web Developer',
+  title: 'Cletus Ntsoereng - Web Developer & Digital Explorer',
   description: 'I am a fullstack web developer based in Maseru, Lesotho.',
   openGraph: {
     images: "/img/cletus-1.png",
