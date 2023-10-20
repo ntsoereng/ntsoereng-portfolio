@@ -11,6 +11,10 @@ const inter = Inter({ subsets: ['latin'] });
 export const metadata: Metadata = {
   title: 'Cletus Ntsoereng - Web Developer',
   description: 'I am a fullstack web developer based in Maseru, Lesotho.',
+  openGraph: {
+    images: "/img/cletus-1.png",
+  },
+
 };
 
 export const revalidate = 3600;
