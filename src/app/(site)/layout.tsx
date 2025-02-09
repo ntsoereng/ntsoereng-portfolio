@@ -10,7 +10,7 @@ const inter = Inter({ subsets: ['latin'] });
 
 export const metadata: Metadata = {
   title: 'Cletus Ntsoereng - Web Developer & Digital Explorer',
-  description: 'I am a fullstack web developer based in Maseru, Lesotho.',
+  description: 'I am a fullstack web developer and data analyst based in Maseru, Lesotho.',
   openGraph: {
     images: "/img/cletus-1.png",
   },
