@@ -17,7 +17,7 @@ export const metadata: Metadata = {
 
 };
 
-export const revalidate = 3600;
+export const revalidate = 4800;
 
 export default function RootLayout({
   children,
