@@ -84,7 +84,7 @@ export default function Footer() {
                 <span className="sr-only">My Email</span>
                 <BiEnvelope />
               </span>
-              <span>cn.ntsoereng@gmail.com</span>
+              <span>contact@cletusntsoereng.com</span>
             </div>
             <div className="flex gap-4 items-center text-lg mb-4">
               <span className="text-2xl">
